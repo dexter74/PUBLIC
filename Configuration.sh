@@ -11,6 +11,8 @@
 # Sécurisation de l'accès SSH par une clé
 # Blocage du SSH par mot de passe. (root inclus)
 
+# 
+
 clear ; 
 
 ###################################################
