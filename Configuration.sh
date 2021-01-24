@@ -46,7 +46,7 @@ HOST_LANGUE='fr_FR.UTF-8'
 ##################################################
 # Configuration de la Securisation de la machine #
 ##################################################
-KEY_SSH_WINDOWS=''
+KEY_SSH=''
 
 ##########################################################################################################################################################################################
 /usr/sbin/deluser $NEW_USER_USERNAME ;
@@ -142,8 +142,8 @@ echo "net.ipv6.conf.all.disable_ipv6 = 1" > /etc/sysctl.d/70-disable-ipv6.conf
 /sbin/runuser -l $NEW_USER_USERNAME -c 'mkdir '$NEWS_USER_HOME'/.ssh' ;
 #
 #Insertion des cles SSH
-/sbin/runuser -l root -c "echo '$KEY_SSH_WINDOWS' > /root/.ssh/authorized_keys" ;
-/sbin/runuser -l $NEW_USER_USERNAME -c "echo '$KEY_SSH_WINDOWS' > /home/$NEW_USER_USERNAME/.ssh/authorized_keys" ;
+/sbin/runuser -l root -c "echo '$KEY_SSH' > /root/.ssh/authorized_keys" ;
+/sbin/runuser -l $NEW_USER_USERNAME -c "echo '$KEY_SSH' > /home/$NEW_USER_USERNAME/.ssh/authorized_keys" ;
 #
 # Permission sur le dossier SSH
 chmod 700 /root/.ssh ;
