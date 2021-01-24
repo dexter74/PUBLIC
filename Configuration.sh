@@ -1,6 +1,16 @@
 #########################################
 # Script de configuration de la machine #
 #########################################
+# Configuration du
+# - Nom de la machine
+# - Carte-réseau
+# - Source dépôt
+# - Fuseau Horaire
+
+# Création d'un utilisateur
+# Sécurisation de l'accès SSH par une clé
+# Blocage du SSH par mot de passe. (root inclus)
+
 clear ; 
 
 ###################################################
